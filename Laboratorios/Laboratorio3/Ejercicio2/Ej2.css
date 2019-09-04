@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../Ejercicio2/img/fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 1em 5%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+h1{
+    color: black;
+    font-size: 75px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Varela Round', cursive;
+    margin: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+nav{
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+
+}
+
+.btn{
+    border: 1px solid black;
+}
+
+main{
+    width: 60%;
+    height: auto;
+
+    display:flex;
+
+    flex-direction: column;
+    flex-flow: wrap;
+     justify-content: center;
+     align-items: center;
+
+}
+
+main .logos{
+    width: 100%;
+    height: ;
+}
+
+.logos>img{
+    object-fit: cover;
+
+    width: 5em;
+    height: 5em;
+    margin: 0.5em;
+    background: whitesmoke;
+    border:  1px solid black;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+
+.logos>img:hover{
+
+    opacity: 1;
+}
+
+
+
+
+footer{
+    width: 100%;
+    height:  auto;
+    display: flex;
+    justify-content: space-between
+}
