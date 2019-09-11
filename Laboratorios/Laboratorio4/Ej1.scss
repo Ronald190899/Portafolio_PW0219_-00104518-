@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
-
-
+@import "variables";
 body{
     box-sizing: border-box;
     height: 100vh;
     overflow: hidden;
-    background-image: url(../Ejercicio2/img/fondo.jpg);
+    background-image: url(../Laboratorio4/img/fondo.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -43,27 +42,51 @@ nav {
 
 .btn {
     margin:  0.5em;
-    background: gray;
+    background: $gray;
     padding: 10px;
     border: 10px;
-
-   
+    border-radius:  0.3em;
+    box-shadow: none;
+    padding: 1em;
+    text-transform: uppercase;
     
+    &:hover{
+        opacity: 0.7;
+    }
+
+}
+
+
+
+.btn1:hover{
+    opacity: 0.7;
+}
+
+.btn2:hover{
+    opacity: 0.7;
 }
 
 .btn1{
     margin:  0.5em;
-    background: blueviolet;
+    background: $purple;
     padding: 10px;
     border: 10px;
+    border-radius:  0.3em;
+    box-shadow: none;
+    padding: 1em;
+    text-transform: uppercase;
     
 }
 
 .btn2{
     margin:  0.5em;
-    background: firebrick;
+    background: $red;
     padding: 10px;
     border: 10px;
+    border-radius:  0.3em;
+    box-shadow: none;
+    padding: 1em;
+    text-transform: uppercase;
 }
 
 
@@ -93,7 +116,7 @@ main>img{
     width: 50%;
     height: auto;
     margin: 1em;
-    background: rgba(255, 255, 255, 0.5);
+    background: $gray;
     border-radius: 5px;
 }
 
@@ -124,8 +147,6 @@ main .logos{
 }
 
 
-
-
 footer{
     width: 100%;
     height:  auto;
@@ -133,3 +154,8 @@ footer{
     justify-content: space-between
 }
 
+footer>.btn{
+    text-decoration-line: underline;
+    background: white;
+    opacity:0.7;
+}
