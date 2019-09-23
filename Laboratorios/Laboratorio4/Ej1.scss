@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 @import "variables";
+
+
+@mixin flex($direction, $justify, $align, $flow) {
+    
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+}
+
 body{
     box-sizing: border-box;
     height: 100vh;
@@ -11,11 +22,8 @@ body{
     padding: 1em 5%;
     margin: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    
+    @include flex(column,space-between ,center ,none );
+  
 }
 
 h1{
