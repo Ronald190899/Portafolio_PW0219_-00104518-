@@ -5,7 +5,7 @@ var cant = (n1,n2) => {
             r++;
         }
         if(i==x.length-1){
-            console.log('En el arreglo se encontraron '+r + ' ocurrencias del numero '+y)
+            console.log('se ha repetido'+r + ' el numero '+y)
         }
         }
         r=0;
